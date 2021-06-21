@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<link href="../build/styles/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header d-flex container-fluid d-flex p-0 position-relative">
+		<aside class=" header__sidebar position-absolute d-lg-flex p-0 d-none">
+			<div class="header__sidebar-media mx-4">
+				<ul class="header__sidebar-icons list-inline m-0">
+					<li class="list-inline-item"><a href="http://www.youtube.com"><img src='images/youtube.svg' /></a>
+					</li>
+					<li class="list-inline-item"><a href="http://www.vk.com"><img src='images/VK.svg' /></a>
+					</li>
+					<li class="list-inline-item"><a href="http://www.facebook.com"><img src='images/facebook.svg' /></a>
+					</li>
+					<li class="list-inline-item"><a href="http://www.instagram.com"><img
+								src='images/instagram.svg' /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__sidebar-line mx-4"></div>
+			<div class="header__sidebar-text mx-4">
+				<p class=" text-uppercase m-0">контактная информация</p>
+			</div>
+		</aside>
+		<div class="container h-100">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-shift">
+				<div class="container my-con my-con--shift container-wrap pt-4">
+					<div class="list-wrapper w-100">
+						<a class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><img id="simbolToggle" src="images/burger_menu.svg" alt=""
+									onclick="toggleSimbol(untoggle, toggle)"><img class="icon-tog" id="simbolUntoggle"
+									src="../build/images/x-circle.svg" alt=""
+									onclick="toggleSimbol(toggle, untoggle)"></span>
+						</a>
+						<div class="collapse navbar-collapse navbar-collapse--row" id="navbarNavDropdown">
+							<ul class="navbar-nav nav-list">
+								<li class="nav-item">
+									<a class="nav-link header__link active" aria-current="page" href="#">главная</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link header__link" href="#">о театре</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link header__link" href="#">наши постановки</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link header__link" href="#">партнеры театра</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link header__link" href="#">контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item-wrap"><a href="tel:+39033013113"
+							class="header__link header__link--contact d-none d-lg-block">+39033013113</a>
+					</div>
+					<div class="item-wrap--hidden"><a href="tel:+39033013113"
+							class="header__link header__link--contact d-block d-lg-none">+39033013113</a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="wrapper my-con w-100 d-flex align-items-center justify-content-center h-100">
+				<section class="row align-items-center row-title">
+					<div class="col-xxl-6 col-xl-7 col-12 title-box d-flex justify-content-between pl-lg-3">
+						<h1 class="title text-uppercase">Большой театр</h1>
+						<div class="subtitle">Большо́й теа́тр - петербургский театр, существовавший в 1784-1886 годах, с
+							1886
+							года - Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в
+							России и
+							одно
+							из крупнейших театральных зданий в Европе XVIII.
+						</div>
+						<span><a href="#" class="btn btn-poster text-uppercase">афиша</a></span>
+					</div>
+					<div class="posters col-xxl-4 col-xl-5 offset-xxl-1">
+						<div class="slider">
+							<div class="slider__item slider__item--front"></div>
+							<div class="slider__item slider__item--back"></div>
+						</div>
+						<div class="slider__toggles row mt-5">
+							<div class="slider__toggle slider__toggle--prev col-3"
+								onclick="posterClick(posterBack, posterFront)"></div>
+							<div class="slider__toggle-text col-3 text-uppercase text-start"
+								onclick="posterClick(posterBack, posterFront)">Prev</div>
+							<div class="slider__toggle-text col-3 text-uppercase text-end"
+								onclick="posterClick(posterFront, posterBack)">Next</div>
+							<div class="slider__toggle slider__toggle--next col-3"
+								onclick="posterClick(posterFront, posterBack)"></div>
+						</div>
+					</div>
+			</div>
+			</section>
+		</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container" style="width: 30%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			Exercitationem expedita quae
+			repudiandae nam
+			optio aut nemo corrupti cupiditate eum odit placeat ad laborum, libero numquam, accusamus perferendis ipsam,
+			dolorem error id eligendi in ipsa itaque neque. Voluptatum eos obcaecati, voluptas odio, iure at recusandae
+			commodi doloremque ratione nobis, iusto aliquam quasi ipsum placeat soluta! Dolorum est impedit consectetur
+			omnis nisi, ducimus esse corrupti temporibus, libero deserunt, maxime id assumenda quod. Quas pariatur
+			dolorem sequi. Quasi, nam debitis, rerum mollitia rem culpa nemo illo, consequuntur nesciunt assumenda eius
+			deserunt? Dignissimos amet architecto ex soluta placeat nam iure laboriosam impedit alias, id quibusdam
+			consequuntur! Delectus quisquam minus odit dolor fugit natus, maxime repellendus, cupiditate dolorem
+			nesciunt molestias ducimus sequi quis repellat! Incidunt inventore ipsam rerum voluptatibus vel sapiente
+			error architecto perferendis deleniti quo molestiae repellat ipsum, nemo tempore dolore officia dolores.
+			Quae exercitationem rerum temporibus debitis minima sequi beatae id placeat consectetur.</div>
+	</main>
+	<footer class="footer__wrapper d-flex align-items-center">
+		<div class="container">
+			<form id="form" class="footer__forms">
+				<div class="row mb-0 mb-sm-3 mb-md-5 w-100">
+					<div class="col-12 d-flex justify-content-center p-0 box-title ">
+						<h2 class="footer__title text-uppercase font-sub"><span class="title__gold-text">стать</span>
+							меценатом
+						</h2>
+					</div>
+				</div>
+				<div class="row forms-row my-0 my-sm-3 d-flex">
+					<div class="forms__contacts d-flex col-12 col-lg-4">
+						<div class="row row-contacts">
+							<div class="contacts font-sub col-lg-12 col-6 mb-2 i-1">+7 (812) 123-45-55</div>
+							<div class="contacts font-sub col-lg-12 col-6 mb-2 i-2">+7 (812) 123-45-66</div>
+							<div class="contacts contacts-text font-sub text-uppercase col-lg-12 col-6 mb-2 i-3">
+								info@theater.ru</div>
+							<div class="contacts contacts-text font-sub text-uppercase col-lg-12 col-6 mb-2 i-4">г.
+								санкт-петербург,
+								невский
+								140</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-8">
+						<div class="row">
+							<div class="forms__grid col-12 col-sm-6 d-grid gap-3">
+								<input name="name" type="text" class="forms__grid-input p-1" placeholder="Имя">
+								<input name="company" type="text" class="forms__grid-input p-1" placeholder="Компания">
+								<input name="phone" type="text" class="forms__grid-input p-1" placeholder="Телефон">
+								<input name="email" type="text" class="forms__grid-input p-1" placeholder="E-mail">
+								<div class="forms__grid-text d-none d-sm-block">* Ваши данные не
+									будут переданы третьим лицам, 100%
+									вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные
+									согласно
+									законку ФЗ-52.
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 d-flex forms__flex">
+								<textarea class="forms__flex-input w-100" data-text="massage"
+									id="exampleFormControlTextarea1" rows="4" placeholder="Сообщение"></textarea>
+								<button id="btnSend" class="forms__flex-btn font-sub text-uppercase"
+									type="submit">отправить</button>
+								<div class="forms__grid-text d-sm-none">* Ваши данные не будут
+									переданы третьим лицам, 100%
+									вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные
+									согласно
+									законку ФЗ-52.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/footerScript.js"></script>
+</body>
+
+</html>

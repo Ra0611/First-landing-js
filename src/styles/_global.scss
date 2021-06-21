@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+body, html {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: $bgColor;
+	font: 14px/21px $font;
+	color: $color;
+}
+.section {
+	&--first {
+		height: 100vh;
+	}
+}
+.btns {
+	background: $colorMain;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: $fontSub;
+	padding: 13px 45px;
+	border-color: $colorMain;
+	color: $color;
+	letter-spacing: 1px;
+	font-size: $fontSizeM;
+}

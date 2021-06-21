@@ -1,0 +1,270 @@
+.header{
+    height: 100vh;
+    background: url(../images/bg_header.png) center/cover no-repeat;
+    &__link{
+        text-decoration: none;
+        color: $color;
+        font-family: $fontSub;
+        font-size: $fontSizeM;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 24.51px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        &:hover{
+            color: $color;
+            border-bottom: 2px solid $colorMain;
+        }
+        &--contact{
+            font-size: $fontSizeSM;
+        }
+    }
+    &__sidebar{
+        width: 150%;
+        height: 150px;
+        // margin-left: 0;
+        background-color: rgba(51, 51, 51, 0.7);
+        left: 0;
+        right: 150px;
+        top: 100%;
+        transform-origin: left top;
+        transform: rotate(-90deg);
+        align-items: center;
+        justify-content: start;
+
+        &-text{
+           p{
+            width: 250px;
+            text-align: center;
+            font-family: $fontSub;
+            font-size: $fontSizeM;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+           }
+        }
+        &-line{
+            width: 80px;
+            height: 3px;
+            background-color: white;
+        }
+        &-icons{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            li{
+            top: 50%;
+            transform: translate(0, -50%);
+            transform: rotate(90deg); 
+            }
+        }
+    }
+    .item-wrap--hidden{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+}
+.navbar-shift{
+    left: 50px;
+}
+.icon-tog{
+    margin-left: 120px;
+    width: 100px;
+}
+@media screen and (max-width: 1590px){
+    .my-con{
+        width: calc(100% - 160px) !important;
+        margin-left: 110px;
+        margin-right: 0;
+    }
+    @media screen and (max-width: 769px){
+        .my-con{
+            width: 80% !important;
+            margin-left: 50px;
+        }
+        .navbar-collapse--row{
+            width: 30vw;
+        .header__link{
+            font-size: 16px;
+        }
+        }
+    }
+    @media screen and (max-width: 523px){
+        .my-con{
+            width: 100% !important;
+            margin: auto;
+        }
+        .navbar-collapse--row{
+            width: 45vw;
+            .header__link{
+                font-size: 15px;
+            }
+            }
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .container-wrap{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .navbar-nav{
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .posters{
+        display: none;
+    }
+}
+@media screen and (max-width: 991.5px){
+    .my-con--shift{
+        width: 33% !important;
+        margin-left: -70px;
+        .navbar-collapse{
+            margin-top: -100px;
+            padding-top: 100px;
+            margin-left: 0;
+            padding-left: 30px;
+            background-color: rgba(51, 51, 51, 0.7);
+            height: 100vh;
+        }
+    }
+
+}
+.nav-list{
+    margin-left: -8px;
+    width: 85%;
+    justify-content: space-between;
+}
+.row-title{ 
+    height: 55%;
+    .title-box {
+        height: 22em;
+        flex-direction: column;
+        .title{
+            display: inline !important;
+            padding: 0;
+            font-family: $fontSub;
+            font-size: $fontSizeExtra;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 87px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            @media screen and (max-width: 991.5px){
+                &{
+                    font-size: $fontSizeXXL;
+                }
+            }
+            @media screen and (max-width: 523px){
+                &{
+                    font-size: 36px;
+                }
+            }
+        }   
+        .subtitle{
+            width: 80%;
+            margin: 0;
+            font-family: $font;
+            font-size: $fontSizeS;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            @media screen and (max-width: 523px){
+                &{
+                    width: 100%;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .btn-poster{
+            font-family: $fontSub;
+            font-size: $fontSizeM;
+            font-weight: 700;
+            color: $color;
+            background-color: $colorMain;
+            padding: 0.5em 3.36em;
+            border-radius: 0;
+            &:focus{
+                border-color: $colorMain;
+            }
+        }
+    }
+}
+.slider{
+    width: 25em;
+    height: 35em;
+    position: relative;
+    top: 50%;
+    &__item{
+        height: 490px;
+        width: 350px;
+        position: absolute;
+        transition: all 1s linear;
+        &--front{
+            top: 0;
+            left: 0;
+            background: url(../images/front.png);
+            z-index: 5;
+        }
+        &--back{
+            top: 20px;
+            left: 20px;
+            background: url(../images/poster_2.png);
+            z-index: 1;
+        }
+    }
+    &__toggles{
+        width: 400px;
+        justify-content: space-around;
+    }
+    &__toggle{
+        width: 50px;
+        height: 2px;
+        margin-top: 10px;
+        background-color: $color;
+        &:hover{
+            cursor: pointer;
+        }
+        &::before{
+            content: '';
+            display: inline-block;
+            border-bottom: solid 2px $color;
+            width: 10px;
+            transform: rotate(50deg);
+            position: relative;
+            right: -28px;
+            top: -18px;
+        }
+        &::after{
+            content: '';
+            display: inline-block;
+            border-top: solid 2px $color;
+            width: 10px;
+            transform: rotate(311deg);
+            position: relative;
+            right: -18px;
+            top: -11px;
+        }
+        &--prev{
+            transform: rotate(180deg);
+        }
+    }
+    &__toggle-text{
+        font-family: $fontSub;
+        font-size: $fontSizeM;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
